@@ -15,7 +15,9 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  pp nds
+  pp nds.length
+
+  for i in 0...nds.length
   result = {}
   nil
 end
