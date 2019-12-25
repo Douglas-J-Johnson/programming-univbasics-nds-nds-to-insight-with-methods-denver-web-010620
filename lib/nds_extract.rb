@@ -5,7 +5,9 @@ require 'pp'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
+  
   pp director_data
+  
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -13,6 +15,7 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
+  pp nds
   result = {}
   nil
 end
