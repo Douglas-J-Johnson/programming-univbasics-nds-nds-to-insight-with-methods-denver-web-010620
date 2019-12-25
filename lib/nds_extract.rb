@@ -20,10 +20,12 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
+  director_data = {}
   directorName = ""
   total_of_worldwide_grosses = 0
 
   for i in 0...nds.length
+    director_data = nds[i]
     directorName = nds[i][:name]
     total_of_worldwide_grosses = 0
 
