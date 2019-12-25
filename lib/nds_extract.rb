@@ -15,10 +15,12 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  number_of_directors = nds.length
-  print number_of_directors
+  directorName = ""
 
   for i in 0...nds.length
-    result = {}
+    directorName = nds[i][:name]
+    for j in 0...nds[i][:movies].length
+      result = {}
+    end
   end
 end
