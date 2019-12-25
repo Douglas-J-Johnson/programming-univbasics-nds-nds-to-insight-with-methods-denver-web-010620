@@ -16,6 +16,7 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   directorName = ""
+  worldwide_total_of_grosses
 
   for i in 0...nds.length
     directorName = nds[i][:name]
