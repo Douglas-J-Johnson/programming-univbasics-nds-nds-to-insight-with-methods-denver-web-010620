@@ -5,7 +5,10 @@ require 'pp'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
+  total_of_worldwide_grosses =
+
   for i in 0...director_data[:movies].length
+
   end
   pp director_data
 
@@ -18,17 +21,17 @@ end
 def directors_totals(nds)
   result = {}
   directorName = ""
-  worldwide_total_of_grosses = 0
+  total_of_worldwide_grosses = 0
 
   for i in 0...nds.length
     directorName = nds[i][:name]
-    worldwide_total_of_grosses = 0
+    total_of_worldwide_grosses = 0
 
     for j in 0...nds[i][:movies].length
-      worldwide_total_of_grosses = worldwide_total_of_grosses + nds[i][:movies][j][:worldwide_gross]
+      total_of_worldwide_grosses = total_of_worldwide_grosses + nds[i][:movies][j][:worldwide_gross]
     end
 
-    result[directorName] = worldwide_total_of_grosses
+    result[directorName] = total_of_worldwide_grosses
   end
 
   return result
