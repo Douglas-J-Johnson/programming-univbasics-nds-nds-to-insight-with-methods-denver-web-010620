@@ -9,7 +9,7 @@ def gross_for_director(director_data)
   total_of_worldwide_grosses = 0
 
   for i in 0...director_data[:movies].length
-
+    total_of_worldwide_grosses = total_of_worldwide_grosses + director_data[:movies][i][:worldwide_gross]
   end
 
   return total_of_worldwide_grosses
