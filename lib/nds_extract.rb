@@ -28,6 +28,7 @@ def directors_totals(nds)
     director_data = nds[i]
     directorName = nds[i][:name]
     total_of_worldwide_grosses = 0
+    #total_of_worldwide_grosses = gross_for_director(director_data)
 
     for j in 0...nds[i][:movies].length
       total_of_worldwide_grosses = total_of_worldwide_grosses + nds[i][:movies][j][:worldwide_gross]
